@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.container {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.arrow {
+  position: relative;
+  background: #f8e27b;
+  height: 6px; }
+  .arrow:after {
+    top: 100%;
+    left: 50%;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border: 12px solid rgba(136, 183, 213, 0);
+    border-top-color: #f8e27b;
+    margin-left: -12px; }
+
+.top {
+  margin-top: 15px;
+  vertical-align: middle;
+  overflow: hidden; }
+  .top .left {
+    float: left;
+    vertical-align: middle;
+    line-height: 35px; }
+    .top .left button {
+      font-size: 14px;
+      font-weight: 700;
+      background-size: 15px;
+      padding: 4px 15px 4px 30px;
+      -webkit-border-radius: 20px;
+              border-radius: 20px; }
+      .top .left button:first-child {
+        background: #f8e27b url("../img/icon-pen.png") no-repeat 10px center;
+        margin-right: 10px; }
+      .top .left button:last-child {
+        background: #f8e27b url("../img/icon-money.png") no-repeat 10px center;
+        clear: both; }
+  .top .middle {
+    padding-left: 45%; }
+    .top .middle button {
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      text-indent: -9999px;
+      width: 30px;
+      height: 30px; }
+      .top .middle button:nth-child(1) {
+        background: url("../img/social-circle-vk.png") no-repeat 0 0;
+        background-size: cover; }
+      .top .middle button:nth-child(2) {
+        background: url("../img/social-circle-odnoklassniki.png") no-repeat 0 0;
+        background-size: cover; }
+      .top .middle button:nth-child(3) {
+        background: url("../img/social-circle-fb.png") no-repeat 0 0;
+        background-size: cover; }
+  .top .right {
+    float: right; }
+    .top .right ul {
+      clear: both; }
+      .top .right ul li {
+        display: inline; }
+        .top .right ul li:nth-child(1) {
+          background: url("../img/social-skype.png") no-repeat 0 0;
+          background-size: contain;
+          margin-right: 25px; }
+        .top .right ul li:nth-child(2) {
+          background: url("../img/social-twitter.png") no-repeat 0 0;
+          background-size: contain;
+          margin-right: 30px; }
+        .top .right ul li:nth-child(3) {
+          background: url("../img/social-mail.png") no-repeat 0 0;
+          background-size: contain; }
+        .top .right ul li a {
+          display: inline-block;
+          color: #8dbdef;
+          padding-left: 25px;
+          height: 30px;
+          vertical-align: middle;
+          line-height: 20px; }
+
+hr {
+  margin-top: 10px;
+  height: 2px;
+  background-color: #8dbdef; }
+
+.below-top {
+  margin-top: 40px;
+  overflow: hidden;
+  display: block;
+  width: 100%; }
+  .below-top .left {
+    margin-top: 5px;
+    display: inline-block;
+    width: 33%;
+    float: left; }
+    .below-top .left a {
+      color: #429ae8;
+      display: inline-block; }
+    .below-top .left p:nth-child(1) {
+      margin-bottom: 25px; }
+      .below-top .left p:nth-child(1) a {
+        text-decoration: underline dotted #8dbdef;
+        margin-right: 10px;
+        vertical-align: middle;
+        height: 15px;
+        font-size: 12px; }
+    .below-top .left p:nth-child(2) {
+      font-size: 12px; }
+      .below-top .left p:nth-child(2) span {
+        padding: 0 5px 0 5px; }
+  .below-top .middle {
+    display: inline-block;
+    width: 33%; }
+    .below-top .middle h1 {
+      font-size: 32px; }
+      .below-top .middle h1 span:nth-child(1) {
+        color: #0193e9; }
+      .below-top .middle h1 span:nth-child(2) {
+        color: #f4cf23; }
+      .below-top .middle h1:after {
+        content: "";
+        display: block;
+        width: 60px;
+        margin: 10px 0 10px 100px;
+        border-bottom: 3px solid #000000; }
+    .below-top .middle h6 {
+      display: block;
+      font-size: 12px;
+      width: 150px;
+      margin-left: 75px; }
+  .below-top .right {
+    float: right;
+    display: inline-block; }
+    .below-top .right a {
+      display: block;
+      text-align: right;
+      height: 30px;
+      color: #429ae8; }
+      .below-top .right a:nth-child(1):before {
+        content: "";
+        background: url("../img/icon-basket.png") no-repeat 0 0;
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        background-size: contain;
+        display: inline-block;
+        padding-right: 10px; }
+      .below-top .right a:nth-child(2):before {
+        content: "";
+        background: url("../img/icon-heart.png") no-repeat 0 0;
+        width: 25px;
+        height: 20px;
+        vertical-align: middle;
+        background-size: contain;
+        display: inline-block;
+        padding-right: 10px; }
+
+nav {
+  text-align: center; }
+  nav menu {
+    display: block;
+    width: 100%; }
+    nav menu li {
+      display: inline; }
+      nav menu li a {
+        font-size: 14px;
+        display: inline-block;
+        text-decoration: none;
+        color: #3F3F3F;
+        margin-left: 20px; }
+        nav menu li a:hover {
+          text-decoration: underline #279ceb;
+          color: #279ceb; }
+
+.slider-block {
+  display: block; }
+  .slider-block .slider {
+    overflow: hidden;
+    display: inline-block;
+    height: 300px;
+    width: 69%;
+    border: 2px solid yellow;
+    padding: 40px 250px 0 80px;
+    background: url("../img/fg-medium.jpg") no-repeat right;
+    background-size: contain; }
+    .slider-block .slider h1 {
+      display: block;
+      font-size: 26px;
+      margin-bottom: 18px; }
+    .slider-block .slider p {
+      display: block;
+      font-size: 12px;
+      width: 70%;
+      margin-bottom: 35px; }
+    .slider-block .slider span {
+      display: block;
+      font-size: 22px;
+      margin-bottom: 40px;
+      background: url("../img/icon-sticker.png") no-repeat 0 0;
+      background-size: 17px;
+      padding-left: 20px; }
+    .slider-block .slider a {
+      display: block;
+      font-size: 14px;
+      color: #429ae8; }
+      .slider-block .slider a:after {
+        content: "-10%";
+        background-color: yellow;
+        display: inline-block;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        margin-left: 10px;
+        padding: 12px 5px 12px 5px;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 700; }
+  .slider-block .rec {
+    display: inline-block;
+    width: 29%; }
+    .slider-block .rec ul {
+      height: 300px; }
+      .slider-block .rec ul li {
+        border: 2px solid #429ae8;
+        list-style: none;
+        height: 30%;
+        padding: 15px; }
+        .slider-block .rec ul li a span {
+          display: block; }
