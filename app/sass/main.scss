@@ -224,71 +224,92 @@ nav {
 }
 
 .slider-block {
+	border-top: 1px solid yellow;
+	height: 138px;
 	display: block;
-	.slider {
-		overflow: hidden;
-		display: inline-block;
-		height: 300px;
-		width: 69%;
-		border: 2px solid yellow;
-		padding: 40px 250px 0 80px;
-		background: url("../img/fg-medium.jpg") no-repeat right;
-		background-size: contain;
-			h1 {
-				display: block;
-				font-size: 26px;
-				margin-bottom: 18px;
-			}
-			p {
-				display: block;
-				font-size: 12px;
-				width: 70%;
-				margin-bottom: 35px;
-			}
-			span {
-				display: block;
-				font-size: 22px;
-				margin-bottom: 40px;
-				background: url("../img/icon-sticker.png") no-repeat 0 0;
-				background-size: 17px;
-				padding-left: 20px;
-			}
-			a {
-				display: block;
-				font-size: 14px;
-				color: #429ae8;
-				&:after {
-					content: "-10%";
-					background-color: yellow;
-					display: inline-block;
-					border-radius: 50%;
-					margin-left: 10px;
-					padding: 12px 5px 12px 5px;
-					font-size: 14px;
-					text-decoration: none;
-					font-weight: 700;
+	background: url("../img/tracery-large.png") no-repeat 0 0;
+	background-size: contain;
+		.container {
+			margin-top: 25px;
+			.slider {
+				overflow: hidden;
+				display: inline-block;
+				height: 300px;
+				width: 69%;
+				border: 2px solid yellow;
+				padding: 40px 250px 0 80px;
+				background: white url("../img/fg-medium.jpg") no-repeat right;
+				background-size: contain;
+				h1 {
+					display: block;
+					font-size: 26px;
+					margin-bottom: 18px;
 				}
-			}
-
-	}
-	.rec {
-		display: inline-block;
-		width: 29%;
-		ul {
-			height: 300px;
-			li {
-				border: 2px solid #429ae8;
-				list-style: none;
-				height: 30%;
-				padding: 15px;
+				p {
+					display: block;
+					font-size: 12px;
+					width: 70%;
+					margin-bottom: 35px;
+				}
+				span {
+					display: block;
+					font-size: 22px;
+					margin-bottom: 40px;
+					background: url("../img/icon-sticker.png") no-repeat 0 0;
+					background-size: 17px;
+					padding-left: 20px;
+				}
 				a {
-					span {
-						display: block;
+					display: block;
+					font-size: 14px;
+					color: #429ae8;
+					&:after {
+						content: "-10%";
+						background-color: yellow;
+						display: inline-block;
+						border-radius: 50%;
+						margin-left: 10px;
+						padding: 12px 5px 12px 5px;
+						font-size: 14px;
+						text-decoration: none;
+						font-weight: 700;
+					}
+				}
+
+			}
+			.rec {
+				display: inline-block;
+				width: 30%;
+				vertical-align: top;
+				ul {
+					height: 335px;
+					li {
+						border: 2px solid #429ae8;
+						list-style: none;
+						height: 30%;
+						padding: 10px;
+						background: white url("../img/t-shirts/t-shirt-2.jpg") no-repeat right 0;
+						background-size: contain;
+						a {
+							color: #0193e9;
+							span {
+								display: block;
+								margin-bottom: 10px;
+							}
+							&:after {
+								content: "180 грн.";
+								display: inline-block;
+								background: url("../img/icon-sticker.png") no-repeat 0 0;
+								background-size: contain;
+								padding-left: 20px;
+								text-decoration: none;
+								color: #3F3F3F;
+							}
+						}
 					}
 				}
 			}
 		}
-	}
 }
 
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -183,56 +184,76 @@ nav {
           color: #279ceb; }
 
 .slider-block {
-  display: block; }
-  .slider-block .slider {
-    overflow: hidden;
-    display: inline-block;
-    height: 300px;
-    width: 69%;
-    border: 2px solid yellow;
-    padding: 40px 250px 0 80px;
-    background: url("../img/fg-medium.jpg") no-repeat right;
-    background-size: contain; }
-    .slider-block .slider h1 {
-      display: block;
-      font-size: 26px;
-      margin-bottom: 18px; }
-    .slider-block .slider p {
-      display: block;
-      font-size: 12px;
-      width: 70%;
-      margin-bottom: 35px; }
-    .slider-block .slider span {
-      display: block;
-      font-size: 22px;
-      margin-bottom: 40px;
-      background: url("../img/icon-sticker.png") no-repeat 0 0;
-      background-size: 17px;
-      padding-left: 20px; }
-    .slider-block .slider a {
-      display: block;
-      font-size: 14px;
-      color: #429ae8; }
-      .slider-block .slider a:after {
-        content: "-10%";
-        background-color: yellow;
-        display: inline-block;
-        -webkit-border-radius: 50%;
-                border-radius: 50%;
-        margin-left: 10px;
-        padding: 12px 5px 12px 5px;
+  border-top: 1px solid yellow;
+  height: 138px;
+  display: block;
+  background: url("../img/tracery-large.png") no-repeat 0 0;
+  background-size: contain; }
+  .slider-block .container {
+    margin-top: 25px; }
+    .slider-block .container .slider {
+      overflow: hidden;
+      display: inline-block;
+      height: 300px;
+      width: 69%;
+      border: 2px solid yellow;
+      padding: 40px 250px 0 80px;
+      background: white url("../img/fg-medium.jpg") no-repeat right;
+      background-size: contain; }
+      .slider-block .container .slider h1 {
+        display: block;
+        font-size: 26px;
+        margin-bottom: 18px; }
+      .slider-block .container .slider p {
+        display: block;
+        font-size: 12px;
+        width: 70%;
+        margin-bottom: 35px; }
+      .slider-block .container .slider span {
+        display: block;
+        font-size: 22px;
+        margin-bottom: 40px;
+        background: url("../img/icon-sticker.png") no-repeat 0 0;
+        background-size: 17px;
+        padding-left: 20px; }
+      .slider-block .container .slider a {
+        display: block;
         font-size: 14px;
-        text-decoration: none;
-        font-weight: 700; }
-  .slider-block .rec {
-    display: inline-block;
-    width: 29%; }
-    .slider-block .rec ul {
-      height: 300px; }
-      .slider-block .rec ul li {
-        border: 2px solid #429ae8;
-        list-style: none;
-        height: 30%;
-        padding: 15px; }
-        .slider-block .rec ul li a span {
-          display: block; }
+        color: #429ae8; }
+        .slider-block .container .slider a:after {
+          content: "-10%";
+          background-color: yellow;
+          display: inline-block;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          margin-left: 10px;
+          padding: 12px 5px 12px 5px;
+          font-size: 14px;
+          text-decoration: none;
+          font-weight: 700; }
+    .slider-block .container .rec {
+      display: inline-block;
+      width: 30%;
+      vertical-align: top; }
+      .slider-block .container .rec ul {
+        height: 335px; }
+        .slider-block .container .rec ul li {
+          border: 2px solid #429ae8;
+          list-style: none;
+          height: 30%;
+          padding: 10px;
+          background: white url("../img/t-shirts/t-shirt-2.jpg") no-repeat right 0;
+          background-size: contain; }
+          .slider-block .container .rec ul li a {
+            color: #0193e9; }
+            .slider-block .container .rec ul li a span {
+              display: block;
+              margin-bottom: 10px; }
+            .slider-block .container .rec ul li a:after {
+              content: "180 грн.";
+              display: inline-block;
+              background: url("../img/icon-sticker.png") no-repeat 0 0;
+              background-size: contain;
+              padding-left: 20px;
+              text-decoration: none;
+              color: #3F3F3F; }
