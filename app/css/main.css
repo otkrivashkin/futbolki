@@ -478,7 +478,11 @@ nav {
   display: block; }
   .discount .first {
     display: inline-block;
+<<<<<<< HEAD
     width: 40%; }
+=======
+    width: 50%; }
+>>>>>>> d5640a1f96b3305e6824fbfdae985976db540450
     .discount .first p {
       font-size: 40px;
       color: #0193e9; }
@@ -489,6 +493,7 @@ nav {
     .discount .second p {
       font-size: 100px;
       color: #f2de36; }
+<<<<<<< HEAD
   .discount img {
     vertical-align: bottom; }
 
@@ -515,3 +520,5 @@ nav {
       display: block; }
     .review .right .content {
       display: block; }
+=======
+>>>>>>> d5640a1f96b3305e6824fbfdae985976db540450
