@@ -121,6 +121,7 @@ hr {
         padding: 0 5px 0 5px; }
   .below-top .middle {
     display: inline-block;
+    text-align: center;
     width: 33%; }
     .below-top .middle h1 {
       font-size: 32px; }
@@ -131,14 +132,13 @@ hr {
       .below-top .middle h1:after {
         content: "";
         display: block;
-        width: 60px;
-        margin: 10px 0 10px 100px;
+        width: 55px;
+        margin: 10px 0 10px 130px;
         border-bottom: 3px solid #000000; }
     .below-top .middle h6 {
       display: block;
       font-size: 12px;
-      width: 150px;
-      margin-left: 75px; }
+      text-align: center; }
   .below-top .right {
     float: right;
     display: inline-block; }
@@ -156,6 +156,8 @@ hr {
         background-size: contain;
         display: inline-block;
         padding-right: 10px; }
+      .below-top .right a:nth-child(2) {
+        margin-top: 20px; }
       .below-top .right a:nth-child(2):before {
         content: "";
         background: url("../img/icon-heart.png") no-repeat 0 0;
@@ -173,25 +175,37 @@ nav {
     width: 100%; }
     nav menu li {
       display: inline; }
-      nav menu li a {
-        font-size: 14px;
-        display: inline-block;
-        text-decoration: none;
-        color: #3F3F3F;
-        margin-left: 20px; }
-        nav menu li a:hover {
-          text-decoration: underline #279ceb;
-          color: #279ceb; }
+  nav .top {
+    margin-bottom: 15px; }
+    nav .top a {
+      font-size: 14px;
+      display: inline-block;
+      text-decoration: none;
+      color: #3F3F3F;
+      margin-left: 20px; }
+      nav .top a:hover {
+        text-decoration: underline #279ceb;
+        color: #279ceb; }
+  nav .bottom a {
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    color: #3F3F3F;
+    margin-left: 20px;
+    padding-bottom: 16px; }
+    nav .bottom a:hover {
+      border-bottom: 3px solid #429ae8; }
 
 .slider-block {
   border-top: 1px solid yellow;
-  height: 138px;
+  height: 335px;
   display: block;
   background: url("../img/tracery-large.png") no-repeat 0 0;
   background-size: contain; }
   .slider-block .container {
     margin-top: 25px; }
     .slider-block .container .slider {
+      position: relative;
       overflow: hidden;
       display: inline-block;
       height: 300px;
@@ -203,7 +217,8 @@ nav {
       .slider-block .container .slider h1 {
         display: block;
         font-size: 26px;
-        margin-bottom: 18px; }
+        margin-bottom: 18px;
+        color: #0193e9; }
       .slider-block .container .slider p {
         display: block;
         font-size: 12px;
@@ -231,6 +246,33 @@ nav {
           font-size: 14px;
           text-decoration: none;
           font-weight: 700; }
+      .slider-block .container .slider:before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        background-size: contain;
+        left: 10px;
+        top: 45%;
+        width: 35px;
+        height: 35px;
+        background: yellow url("../img/icon-arrow.png") no-repeat 10px center;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+      .slider-block .container .slider:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        background-size: contain;
+        right: 10px;
+        top: 45%;
+        width: 35px;
+        height: 35px;
+        background: yellow url("../img/icon-arrow.png") no-repeat 10px center;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg); }
     .slider-block .container .rec {
       display: inline-block;
       width: 30%;
@@ -240,8 +282,10 @@ nav {
         .slider-block .container .rec ul li {
           border: 2px solid #429ae8;
           list-style: none;
-          height: 30%;
+          height: -webkit-calc(30% - 10px);
+          height: calc(30% - 10px);
           padding: 10px;
+          margin-bottom: 10px;
           background: white url("../img/t-shirts/t-shirt-2.jpg") no-repeat right 0;
           background-size: contain; }
           .slider-block .container .rec ul li a {
@@ -257,3 +301,217 @@ nav {
               padding-left: 20px;
               text-decoration: none;
               color: #3F3F3F; }
+          .slider-block .container .rec ul li:last-child {
+            height: 30%; }
+
+.social {
+  display: block; }
+  .social h1 {
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    color: #0193e9;
+    margin-top: 50px; }
+  .social img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px; }
+
+.info {
+  margin-top: 45px;
+  text-align: center; }
+  .info ul li {
+    text-align: left;
+    display: inline-block;
+    width: -webkit-calc((100% / 3) - 30px);
+    width: calc((100% / 3) - 30px);
+    padding-left: 80px;
+    margin-right: 30px; }
+    .info ul li i {
+      margin-top: 15px;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 15px; }
+    .info ul li h5 {
+      font-size: 14px;
+      margin-bottom: 15px; }
+    .info ul li p {
+      font-size: 12px;
+      margin-bottom: 15px; }
+    .info ul li a {
+      color: #0193e9; }
+    .info ul li:nth-child(1) {
+      background: url("../img/icon-brush.png") no-repeat 0 0; }
+    .info ul li:nth-child(2) {
+      background: url("../img/icon-operator.png") no-repeat 0 0; }
+    .info ul li:nth-child(3) {
+      background: url("../img/icon-man.png") no-repeat 0 0;
+      margin-right: 0; }
+
+.shirts {
+  margin-top: 50px; }
+  .shirts .text h1 {
+    text-align: center;
+    font-size: 22px;
+    color: #279ceb; }
+    .shirts .text h1:after {
+      content: "";
+      margin-top: 10px;
+      width: 65px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border-bottom: 2px solid black; }
+  .shirts .text a {
+    text-align: center;
+    display: block;
+    color: #0193e9;
+    margin-top: 10px; }
+  .shirts .list {
+    margin-top: 20px; }
+    .shirts .list ul {
+      position: relative; }
+      .shirts .list ul:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        background-size: contain;
+        right: 10px;
+        top: 30%;
+        width: 35px;
+        height: 35px;
+        background: yellow url("../img/icon-arrow.png") no-repeat 10px center;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg); }
+      .shirts .list ul:before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        background-size: contain;
+        left: 10px;
+        top: 30%;
+        width: 35px;
+        height: 35px;
+        background: yellow url("../img/icon-arrow.png") no-repeat 10px center;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+      .shirts .list ul li {
+        display: inline; }
+        .shirts .list ul li a {
+          text-decoration: none;
+          text-align: center;
+          width: -webkit-calc((100% / 4) - 5px);
+          width: calc((100% / 4) - 5px);
+          display: inline-block;
+          background: url("../img/t-shirts/t-shirt-1.jpg") no-repeat 0 0;
+          background-size: contain;
+          padding-top: 25%;
+          padding-bottom: 50px;
+          max-height: 430px; }
+          .shirts .list ul li a p:nth-child(1) {
+            color: #0193e9;
+            font-size: 14px; }
+          .shirts .list ul li a p:nth-child(2) {
+            color: #3F3F3F;
+            font-size: 14px; }
+          .shirts .list ul li a p:nth-child(3) {
+            color: #3F3F3F;
+            font-size: 18px;
+            margin: 15px 0; }
+          .shirts .list ul li a button {
+            padding: 5px 10px 5px 30px;
+            background: yellow url("../img/icon-basket.png") no-repeat 5px center;
+            -webkit-border-radius: 33%;
+                    border-radius: 33%;
+            color: #3F3F3F;
+            font-weight: 700; }
+          .shirts .list ul li a:hover {
+            border: 3px solid #0193e9; }
+  .shirts a {
+    font-size: 22px;
+    text-align: center;
+    display: block;
+    color: #0193e9;
+    text-decoration: underline dotted #0193e9; }
+
+.season .label {
+  text-align: center;
+  font-size: 45px;
+  color: #0193e9;
+  margin-top: 70px; }
+
+.season hr {
+  color: #0193e9;
+  height: 3px;
+  margin-top: 30px; }
+
+.season .hor-list {
+  margin-top: 30px; }
+  .season .hor-list li {
+    display: inline; }
+    .season .hor-list li a {
+      text-decoration: none;
+      text-align: center;
+      width: -webkit-calc((100% / 13) - 5px);
+      width: calc((100% / 13) - 5px);
+      display: inline-block;
+      background: url("../img/t-shirts/t-shirt-1.jpg") no-repeat 0 0;
+      background-size: contain;
+      padding-top: 8%; }
+      .season .hor-list li a p:nth-child(1) {
+        color: #3F3F3F;
+        font-size: 14px; }
+      .season .hor-list li a button {
+        padding: 5px 10px 5px 30px;
+        background: yellow url("../img/icon-basket.png") no-repeat 5px center;
+        -webkit-border-radius: 33%;
+                border-radius: 33%;
+        color: #3F3F3F;
+        font-weight: 700; }
+
+.discount {
+  display: block; }
+  .discount .first {
+    display: inline-block;
+    width: 40%; }
+    .discount .first p {
+      font-size: 40px;
+      color: #0193e9; }
+  .discount .second {
+    display: inline-block;
+    height: 120px;
+    line-height: 120px; }
+    .discount .second p {
+      font-size: 100px;
+      color: #f2de36; }
+  .discount img {
+    vertical-align: bottom; }
+
+.review {
+  display: block; }
+  .review .left {
+    display: inline-block;
+    width: 45%; }
+    .review .left .title {
+      display: block;
+      width: 100%; }
+      .review .left .title p {
+        display: inline-block; }
+      .review .left .title a {
+        display: inline-block;
+        text-align: right;
+        width: 50%; }
+    .review .left .content {
+      display: block; }
+  .review .right {
+    display: inline-block;
+    width: 45%; }
+    .review .right .title {
+      display: block; }
+    .review .right .content {
+      display: block; }
