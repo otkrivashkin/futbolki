@@ -475,50 +475,87 @@ nav {
         font-weight: 700; }
 
 .discount {
-  display: block; }
-  .discount .first {
+  display: block;
+  margin-top: 30px; }
+  .discount .content {
     display: inline-block;
-<<<<<<< HEAD
-    width: 40%; }
-=======
-    width: 50%; }
->>>>>>> d5640a1f96b3305e6824fbfdae985976db540450
-    .discount .first p {
-      font-size: 40px;
-      color: #0193e9; }
-  .discount .second {
-    display: inline-block;
-    height: 120px;
-    line-height: 120px; }
-    .discount .second p {
-      font-size: 100px;
-      color: #f2de36; }
-<<<<<<< HEAD
+    width: 79%;
+    position: relative; }
+    .discount .content .first {
+      position: absolute;
+      bottom: 30px;
+      display: inline-block;
+      width: 50%;
+      margin-right: 80px; }
+      .discount .content .first p {
+        font-size: 40px;
+        color: #0193e9; }
+    .discount .content .second {
+      position: absolute;
+      bottom: 0;
+      left: 60%;
+      display: inline-block; }
+      .discount .content .second p {
+        font-size: 130px;
+        color: #f2de36; }
   .discount img {
-    vertical-align: bottom; }
+    display: inline-block; }
 
 .review {
-  display: block; }
+  display: block;
+  margin-top: 30px; }
+  .review .width {
+    width: -webkit-calc(100% /2 - 40px);
+    width: calc(100% /2 - 40px); }
   .review .left {
     display: inline-block;
-    width: 45%; }
+    margin-right: 50px; }
     .review .left .title {
-      display: block;
+      position: relative;
+      display: inline-block;
       width: 100%; }
       .review .left .title p {
-        display: inline-block; }
+        display: inline-block;
+        color: #0193e9;
+        font-size: 22px; }
       .review .left .title a {
+        position: absolute;
         display: inline-block;
         text-align: right;
-        width: 50%; }
+        color: #0193e9;
+        bottom: 0;
+        right: 0; }
     .review .left .content {
       display: block; }
+      .review .left .content p {
+        margin: 5px 0;
+        color: #3F3F3F; }
+        .review .left .content p:nth-child(2) {
+          color: #0193e9;
+          font-weight: 700; }
   .review .right {
-    display: inline-block;
-    width: 45%; }
+    display: inline-block; }
     .review .right .title {
-      display: block; }
+      display: block;
+      width: 100%;
+      position: relative; }
+      .review .right .title p {
+        display: inline-block;
+        color: #0193e9;
+        font-size: 22px; }
+      .review .right .title a {
+        display: inline-block;
+        color: #0193e9;
+        position: absolute;
+        right: 0;
+        bottom: 0; }
     .review .right .content {
-      display: block; }
-=======
->>>>>>> d5640a1f96b3305e6824fbfdae985976db540450
+      display: block;
+      padding-left: 80px;
+      background: url("../img/reviews/man-1.png") no-repeat 0 0; }
+      .review .right .content p {
+        margin: 5px 0;
+        color: #3F3F3F; }
+        .review .right .content p:nth-child(2) {
+          color: #3F3F3F;
+          font-weight: 700; }

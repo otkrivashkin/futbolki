@@ -565,56 +565,108 @@ nav {
 
 .discount {
 	display: block;
-	.first {
+	margin-top: 30px;
+	.content {
 		display: inline-block;
-		width: 50%;
-		p {
-			font-size: 40px;
-			color: #0193e9;
+		width: 79%;
+		position: relative;
+		.first {
+			position: absolute;
+			bottom: 30px;
+			display: inline-block;
+			width: 50%;
+			margin-right: 80px;
+			p {
+				font-size: 40px;
+				color: #0193e9;
+			}
 		}
-	}
-	.second {
-		display: inline-block;
-		height: 120px;
-		line-height: 120px;
-		p {
-			color: #f2de36;
+		.second {
+			position: absolute;
+			bottom: 0;
+			left: 60%;
+			display: inline-block;
+			p {
+				font-size: 130px;
+				color: #f2de36;
+			}
 		}
 	}
 	img {
-		vertical-align: bottom;
+		display: inline-block;
 	}
 }
 
 .review {
 	display: block;
+	margin-top: 30px;
+	.width {
+		width: calc(100% /2 - 40px);
+	}
 	.left {
 		display: inline-block;
-		width: 45%;
+		margin-right: 50px;
 		.title {
-			display: block;
+			position: relative;
+			display: inline-block;
 			width: 100%;
 			p {
 				display: inline-block;
+				color: #0193e9;
+				font-size: 22px;
 			}
 			a {
+				position: absolute;
 				display: inline-block;
 				text-align: right;
-				width: 50%;
+				color: #0193e9;
+				bottom: 0;
+				right: 0;
 			}
 		}
 		.content {
 			display: block;
+			p {
+				margin: 5px 0;
+				color: #3F3F3F;
+				&:nth-child(2) {
+					color: #0193e9;
+					font-weight: 700;
+				}
+			}
 		}
 	}
 	.right {
 		display: inline-block;
-		width: 45%;
 		.title {
 			display: block;
+			width: 100%;
+			position: relative;
+			p {
+				display: inline-block;
+				color: #0193e9;
+				font-size: 22px;
+			}
+			a {
+				display: inline-block;
+				color: #0193e9;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
 		}
 		.content {
 			display: block;
+			padding-left: 80px;
+			background: url("../img/reviews/man-1.png") no-repeat 0 0;
+			p {
+				margin: 5px 0;
+				color: #3F3F3F;
+				&:nth-child(2) {
+					color: #3F3F3F;
+					font-weight: 700;
+				}
+			}
 		}
 	}
 }
