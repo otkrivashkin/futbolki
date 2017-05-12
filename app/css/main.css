@@ -559,3 +559,11 @@ nav {
         .review .right .content p:nth-child(2) {
           color: #3F3F3F;
           font-weight: 700; }
+
+.tracery {
+  background: url("../img/tracery-large.png") no-repeat 0 0;
+  background-size: cover;
+  height: 138px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }

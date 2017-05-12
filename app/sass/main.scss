@@ -672,7 +672,12 @@ nav {
 }
 
 
-
+.tracery {
+	background: url("../img/tracery-large.png") no-repeat 0 0;
+	background-size: cover;
+	height: 138px;
+	transform: rotate(180deg);
+}
 
 
 
