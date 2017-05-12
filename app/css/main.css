@@ -505,60 +505,56 @@ nav {
   display: block;
   margin-top: 30px; }
   .review .width {
-    width: -webkit-calc(100% /2 - 40px);
-    width: calc(100% /2 - 40px); }
+    width: -webkit-calc(100% /2 - 30px);
+    width: calc(100% /2 - 30px); }
+  .review .title {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .review .title p {
+      display: inline-block;
+      color: #0193e9;
+      font-size: 18px;
+      font-weight: 700; }
+    .review .title a {
+      position: absolute;
+      display: inline-block;
+      text-align: right;
+      color: #0193e9;
+      bottom: 0;
+      right: 0;
+      font-size: 12px; }
+  .review .content {
+    display: block;
+    margin: 15px 0; }
+    .review .content p {
+      margin: 5px 0;
+      color: #3F3F3F;
+      font-size: 12px; }
+      .review .content p:nth-child(2) {
+        color: #0193e9;
+        font-weight: 700;
+        font-size: 14px; }
+  .review hr {
+    color: #0193e9;
+    height: 3px; }
   .review .left {
     display: inline-block;
     margin-right: 50px; }
-    .review .left .title {
-      position: relative;
-      display: inline-block;
-      width: 100%; }
-      .review .left .title p {
-        display: inline-block;
-        color: #0193e9;
-        font-size: 22px; }
-      .review .left .title a {
-        position: absolute;
-        display: inline-block;
-        text-align: right;
-        color: #0193e9;
-        bottom: 0;
-        right: 0; }
-    .review .left .content {
-      display: block; }
-      .review .left .content p {
-        margin: 5px 0;
-        color: #3F3F3F; }
-        .review .left .content p:nth-child(2) {
-          color: #0193e9;
-          font-weight: 700; }
   .review .right {
     display: inline-block; }
     .review .right .title {
       display: block;
       width: 100%;
       position: relative; }
-      .review .right .title p {
-        display: inline-block;
-        color: #0193e9;
-        font-size: 22px; }
-      .review .right .title a {
-        display: inline-block;
-        color: #0193e9;
-        position: absolute;
-        right: 0;
-        bottom: 0; }
     .review .right .content {
       display: block;
       padding-left: 80px;
       background: url("../img/reviews/man-1.png") no-repeat 0 0; }
-      .review .right .content p {
-        margin: 5px 0;
+      .review .right .content p:nth-child(2) {
         color: #3F3F3F; }
-        .review .right .content p:nth-child(2) {
-          color: #3F3F3F;
-          font-weight: 700; }
+    .review .right .content:nth-child(4) {
+      background: url("../img/reviews/woman-1.png") no-repeat 0 0; }
 
 .tracery {
   background: url("../img/tracery-large.png") no-repeat 0 0;
@@ -567,3 +563,51 @@ nav {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg); }
+
+.footer .info-block {
+  width: 50%;
+  display: inline-block; }
+  .footer .info-block .link {
+    display: inline-block; }
+    .footer .info-block .link p {
+      font-weight: 700;
+      font-size: 14px;
+      color: #3F3F3F; }
+    .footer .info-block .link ul li {
+      list-style: none; }
+      .footer .info-block .link ul li a {
+        display: inline-block;
+        color: #0193e9;
+        margin: 7px 0;
+        font-size: 12px; }
+
+.footer .contacts {
+  display: inline-block;
+  width: 25%; }
+  .footer .contacts .buttons {
+    display: block; }
+    .footer .contacts .buttons li {
+      display: inline; }
+      .footer .contacts .buttons li button {
+        background: url("../img/social-circle-vk.png") no-repeat 0 0;
+        text-indent: -9999px;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+  .footer .contacts .social-btn li {
+    display: inline-block;
+    padding-left: 25px;
+    background: url("../img/social-mail.png") no-repeat 0 0;
+    margin-bottom: 15px; }
+    .footer .contacts .social-btn li a {
+      display: inline-block;
+      color: #0193e9; }
+
+.footer .phone {
+  display: inline-block;
+  float: right;
+  font-size: 20px; }
+  .footer .phone p {
+    margin-bottom: 10px; }
