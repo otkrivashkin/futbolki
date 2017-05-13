@@ -105,7 +105,40 @@
 		}
 	}
 }
+@mixin link-with-image($content, $img) {
+	display: inline-block;
+	color: #8dbdef;
+	padding-left: 25px;
+	height: 30px;
+	vertical-align: middle;
+	line-height: 20px;
 
+	&:after {
+		content: $content;
+		display: inline-block;
+		text-decoration: underline blue;
+	}
+	&:before {
+		content: "";
+		display: inline-block;
+		background: url($img) no-repeat 0 0;
+		background-size: contain;
+		width: 15px;
+		height: 15px;
+	}
+}
+.test-container {
+	@extend .container;
+	ul {
+		li {
+			a {
+				@include link-with-image("testing-one", "../img/social-mail.png");
+			}
+		}
+	}
+
+
+}
 hr {
 	margin-top: 10px;
 	height: 2px;
@@ -354,7 +387,7 @@ nav {
 							}
 						}
 						&:last-child {
-							height: 30%; // TODO fix height
+							height: 30%;
 						}
 					}
 				}
@@ -564,11 +597,11 @@ nav {
 }
 
 .discount {
-	display: block;
+	display: flex;
+	flex-wrap: nowrap;
 	margin-top: 30px;
 	.content {
-		display: inline-block;
-		width: 79%;
+		flex: auto;
 		position: relative;
 		.first {
 			position: absolute;
@@ -671,6 +704,7 @@ nav {
 
 
 .tracery {
+	margin-top: 60px;
 	background: url("../img/tracery-large.png") no-repeat 0 0;
 	background-size: cover;
 	height: 138px;
@@ -678,32 +712,32 @@ nav {
 }
 
 .footer {
-	.info-block {
-		width: 50%;
-		display: inline-block;
-		.link {
-			display: inline-block;
-			p {
-				font-weight: 700;
-				font-size: 14px;
-				color: #3F3F3F;
-			}
-			ul {
-				li {
-					list-style: none;
-					a {
-						display: inline-block;
-						color: #0193e9;
-						margin: 7px 0;
-						font-size: 12px;
-					}
+	margin-top: 40px;
+	@extend .container;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	.links {
+		flex: auto;
+		p {
+			font-weight: 700;
+			font-size: 14px;
+			color: #3F3F3F;
+		}
+		ul {
+			li {
+				list-style: none;
+				a {
+					display: inline-block;
+					color: #0193e9;
+					margin: 7px 0;
+					font-size: 12px;
 				}
 			}
 		}
 	}
 	.contacts {
-		display: inline-block;
-		width: 25%;
+		flex: auto;
 		.buttons {
 			display: block;
 			li {
@@ -718,27 +752,49 @@ nav {
 				}
 			}
 		}
-		.social-btn {
-			li {
-				display: inline-block;
-				padding-left: 25px;
-				background: url("../img/social-mail.png") no-repeat 0 0;
-				margin-bottom: 15px;
-				a {
-					display: inline-block;
-					color: #0193e9;
-
+		.social {
+			display: block;
+			margin-top: 15px;
+			.row {
+				display: block;
+				li {
+					display: inline;
+					a {
+						color: #0193e9;
+						display: inline-block;
+						background: url("../img/social-skype.png") no-repeat 0 0;
+						background-size: contain;
+						padding-left: 25px;
+					}
+					&:first-child {
+						margin-right: 25px;
+					}
+				}
+				&:last-child {
+					margin-top: 7px;
 				}
 			}
 		}
 	}
 	.phone {
-		display: inline-block;
-		float: right;
 		font-size: 20px;
 		p {
+			font-size: 20px;
 			margin-bottom: 10px;
 		}
 	}
 }
 
+.bottom-text {
+	@extend .container;
+	p {
+		font-size: 11px;
+		color: #bababa;
+	}
+}
+.copyright {
+	background-color: #0193e9;
+	text-align: center;
+	padding: 15px;
+	color: white;
+}
