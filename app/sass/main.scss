@@ -759,29 +759,85 @@ nav {
 				a {
 					display: inline-block;
 					color: #0193e9;
+					.info-block {
+						width: 50%;
+						display: inline-block;
+						.link {
+							display: inline-block;
+							p {
+								font-weight: 700;
+								font-size: 14px;
+								color: #3F3F3F;
+							}
+							ul {
+								li {
+									list-style: none;
+									a {
+										display: inline-block;
+										color: #0193e9;
+										margin: 7px 0;
+										font-size: 12px;
+									}
+								}
+							}
+						}
+					}
+					.contacts {
+						display: inline-block;
+						width: 25%;
+						.buttons {
+							display: block;
+							li {
+								display: inline;
+								button {
+									background: url("../img/social-circle-vk.png") no-repeat 0 0;
+									text-indent: -9999px;
+									background-size: contain;
+									width: 30px;
+									height: 30px;
+									border-radius: 50%;
+								}
+							}
+						}
+						.social-btn {
+							li {
+								display: inline-block;
+								padding-left: 25px;
+								background: url("../img/social-mail.png") no-repeat 0 0;
+								margin-bottom: 15px;
+								a {
+									display: inline-block;
+									color: #0193e9;
+
+								}
+							}
+						}
+					}
+					.phone {
+						font-size: 20px;
+						p {
+							display: inline-block;
+							float: right;
+							font-size: 20px;
+							margin-bottom: 10px;
+						}
+					}
+				}
+
+				.bottom-text {
+					p {
+						display: inline;
+					}
+				}
+
+				.copyright {
+					background-color: #0193e9;
+					text-align: center;
+					padding: 15px;
+					color: white;
 				}
 			}
 		}
 	}
-	.phone {
-		font-size: 20px;
-		p {
-			display: block;
-			margin-bottom: 10px;
-		}
-	}
-}
-
-.bottom-text {
-	p {
-		display: inline;
-	}
-}
-
-.copyright {
-	background-color: #0193e9;
-	text-align: center;
-	padding: 15px;
-	color: white;
 }
 

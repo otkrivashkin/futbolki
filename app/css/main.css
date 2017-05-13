@@ -635,17 +635,56 @@ nav {
       .footer .contacts .social-btn li a {
         display: inline-block;
         color: #0193e9; }
-  .footer .phone {
-    font-size: 20px; }
-    .footer .phone p {
-      display: block;
-      margin-bottom: 10px; }
-
-.bottom-text p {
-  display: inline; }
-
-.copyright {
-  background-color: #0193e9;
-  text-align: center;
-  padding: 15px;
-  color: white; }
+        .footer .contacts .social-btn li a .info-block {
+          width: 50%;
+          display: inline-block; }
+          .footer .contacts .social-btn li a .info-block .link {
+            display: inline-block; }
+            .footer .contacts .social-btn li a .info-block .link p {
+              font-weight: 700;
+              font-size: 14px;
+              color: #3F3F3F; }
+            .footer .contacts .social-btn li a .info-block .link ul li {
+              list-style: none; }
+              .footer .contacts .social-btn li a .info-block .link ul li a {
+                display: inline-block;
+                color: #0193e9;
+                margin: 7px 0;
+                font-size: 12px; }
+        .footer .contacts .social-btn li a .contacts {
+          display: inline-block;
+          width: 25%; }
+          .footer .contacts .social-btn li a .contacts .buttons {
+            display: block; }
+            .footer .contacts .social-btn li a .contacts .buttons li {
+              display: inline; }
+              .footer .contacts .social-btn li a .contacts .buttons li button {
+                background: url("../img/social-circle-vk.png") no-repeat 0 0;
+                text-indent: -9999px;
+                background-size: contain;
+                width: 30px;
+                height: 30px;
+                -webkit-border-radius: 50%;
+                        border-radius: 50%; }
+          .footer .contacts .social-btn li a .contacts .social-btn li {
+            display: inline-block;
+            padding-left: 25px;
+            background: url("../img/social-mail.png") no-repeat 0 0;
+            margin-bottom: 15px; }
+            .footer .contacts .social-btn li a .contacts .social-btn li a {
+              display: inline-block;
+              color: #0193e9; }
+        .footer .contacts .social-btn li a .phone {
+          font-size: 20px; }
+          .footer .contacts .social-btn li a .phone p {
+            display: inline-block;
+            float: right;
+            font-size: 20px;
+            margin-bottom: 10px; }
+      .footer .contacts .social-btn li .bottom-text p {
+        display: inline; }
+      .footer .contacts .social-btn li .copyright {
+        background-color: #0193e9;
+        text-align: center;
+        padding: 15px;
+        color: white; }
