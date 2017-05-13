@@ -105,7 +105,40 @@
 		}
 	}
 }
+@mixin link-with-image($content, $img) {
+	display: inline-block;
+	color: #8dbdef;
+	padding-left: 25px;
+	height: 30px;
+	vertical-align: middle;
+	line-height: 20px;
 
+	&:after {
+		content: $content;
+		display: inline-block;
+		text-decoration: underline blue;
+	}
+	&:before {
+		content: "";
+		display: inline-block;
+		background: url($img) no-repeat 0 0;
+		background-size: contain;
+		width: 15px;
+		height: 15px;
+	}
+}
+.test-container {
+	@extend .container;
+	ul {
+		li {
+			a {
+				@include link-with-image("testing-one", "../img/social-mail.png");
+			}
+		}
+	}
+
+
+}
 hr {
 	margin-top: 10px;
 	height: 2px;
