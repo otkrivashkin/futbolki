@@ -192,9 +192,10 @@ nav {
     text-decoration: none;
     color: #3F3F3F;
     margin-left: 20px;
-    padding-bottom: 16px; }
+    padding-bottom: 16px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0); }
     nav .bottom a:hover {
-      border-bottom: 3px solid #429ae8; }
+      border-bottom: 3px solid #279ceb; }
 
 .slider-block {
   border-top: 1px solid yellow;
@@ -412,7 +413,8 @@ nav {
           background-size: contain;
           padding-top: 25%;
           padding-bottom: 50px;
-          max-height: 430px; }
+          max-height: 430px;
+          border: 3px solid rgba(255, 255, 255, 0); }
           .shirts .list ul li a p:nth-child(1) {
             color: #0193e9;
             font-size: 14px; }
@@ -647,6 +649,7 @@ nav {
   color: #bababa; }
 
 .copyright {
+  margin-top: 15px;
   background-color: #0193e9;
   text-align: center;
   padding: 15px;
