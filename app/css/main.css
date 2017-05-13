@@ -5,7 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-.container, .test-container, .footer, .bottom-text {
+.container, .footer, .bottom-text {
   max-width: 950px;
   margin-left: auto;
   margin-right: auto; }
@@ -88,25 +88,6 @@
           height: 30px;
           vertical-align: middle;
           line-height: 20px; }
-
-.test-container ul li a {
-  display: inline-block;
-  color: #8dbdef;
-  padding-left: 25px;
-  height: 30px;
-  vertical-align: middle;
-  line-height: 20px; }
-  .test-container ul li a:after {
-    content: "testing-one";
-    display: inline-block;
-    text-decoration: underline blue; }
-  .test-container ul li a:before {
-    content: "";
-    display: inline-block;
-    background: url("../img/social-mail.png") no-repeat 0 0;
-    background-size: contain;
-    width: 15px;
-    height: 15px; }
 
 hr {
   margin-top: 10px;
@@ -221,9 +202,9 @@ nav {
   display: block;
   background: url("../img/tracery-large.png") no-repeat 0 0;
   background-size: contain; }
-  .slider-block .container, .slider-block .test-container, .slider-block .footer, .slider-block .bottom-text {
+  .slider-block .container, .slider-block .footer, .slider-block .bottom-text {
     margin-top: 25px; }
-    .slider-block .container .slider, .slider-block .test-container .slider, .slider-block .footer .slider, .slider-block .bottom-text .slider {
+    .slider-block .container .slider, .slider-block .footer .slider, .slider-block .bottom-text .slider {
       position: relative;
       overflow: hidden;
       display: inline-block;
@@ -233,28 +214,28 @@ nav {
       padding: 40px 250px 0 80px;
       background: white url("../img/fg-medium.jpg") no-repeat right;
       background-size: contain; }
-      .slider-block .container .slider h1, .slider-block .test-container .slider h1, .slider-block .footer .slider h1, .slider-block .bottom-text .slider h1 {
+      .slider-block .container .slider h1, .slider-block .footer .slider h1, .slider-block .bottom-text .slider h1 {
         display: block;
         font-size: 26px;
         margin-bottom: 18px;
         color: #0193e9; }
-      .slider-block .container .slider p, .slider-block .test-container .slider p, .slider-block .footer .slider p, .slider-block .bottom-text .slider p {
+      .slider-block .container .slider p, .slider-block .footer .slider p, .slider-block .bottom-text .slider p {
         display: block;
         font-size: 12px;
         width: 70%;
         margin-bottom: 35px; }
-      .slider-block .container .slider span, .slider-block .test-container .slider span, .slider-block .footer .slider span, .slider-block .bottom-text .slider span {
+      .slider-block .container .slider span, .slider-block .footer .slider span, .slider-block .bottom-text .slider span {
         display: block;
         font-size: 22px;
         margin-bottom: 40px;
         background: url("../img/icon-sticker.png") no-repeat 0 0;
         background-size: 17px;
         padding-left: 20px; }
-      .slider-block .container .slider a, .slider-block .test-container .slider a, .slider-block .footer .slider a, .slider-block .bottom-text .slider a {
+      .slider-block .container .slider a, .slider-block .footer .slider a, .slider-block .bottom-text .slider a {
         display: block;
         font-size: 14px;
         color: #429ae8; }
-        .slider-block .container .slider a:after, .slider-block .test-container .slider a:after, .slider-block .footer .slider a:after, .slider-block .bottom-text .slider a:after {
+        .slider-block .container .slider a:after, .slider-block .footer .slider a:after, .slider-block .bottom-text .slider a:after {
           content: "-10%";
           background-color: yellow;
           display: inline-block;
@@ -265,7 +246,7 @@ nav {
           font-size: 14px;
           text-decoration: none;
           font-weight: 700; }
-      .slider-block .container .slider:before, .slider-block .test-container .slider:before, .slider-block .footer .slider:before, .slider-block .bottom-text .slider:before {
+      .slider-block .container .slider:before, .slider-block .footer .slider:before, .slider-block .bottom-text .slider:before {
         content: "";
         position: absolute;
         display: inline-block;
@@ -277,7 +258,7 @@ nav {
         background: yellow url("../img/icon-arrow.png") no-repeat 10px center;
         -webkit-border-radius: 50%;
                 border-radius: 50%; }
-      .slider-block .container .slider:after, .slider-block .test-container .slider:after, .slider-block .footer .slider:after, .slider-block .bottom-text .slider:after {
+      .slider-block .container .slider:after, .slider-block .footer .slider:after, .slider-block .bottom-text .slider:after {
         content: "";
         position: absolute;
         display: inline-block;
@@ -292,13 +273,13 @@ nav {
         -webkit-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
                 transform: rotate(180deg); }
-    .slider-block .container .rec, .slider-block .test-container .rec, .slider-block .footer .rec, .slider-block .bottom-text .rec {
+    .slider-block .container .rec, .slider-block .footer .rec, .slider-block .bottom-text .rec {
       display: inline-block;
       width: 30%;
       vertical-align: top; }
-      .slider-block .container .rec ul, .slider-block .test-container .rec ul, .slider-block .footer .rec ul, .slider-block .bottom-text .rec ul {
+      .slider-block .container .rec ul, .slider-block .footer .rec ul, .slider-block .bottom-text .rec ul {
         height: 335px; }
-        .slider-block .container .rec ul li, .slider-block .test-container .rec ul li, .slider-block .footer .rec ul li, .slider-block .bottom-text .rec ul li {
+        .slider-block .container .rec ul li, .slider-block .footer .rec ul li, .slider-block .bottom-text .rec ul li {
           border: 2px solid #429ae8;
           list-style: none;
           height: -webkit-calc(30% - 10px);
@@ -307,12 +288,12 @@ nav {
           margin-bottom: 10px;
           background: white url("../img/t-shirts/t-shirt-2.jpg") no-repeat right 0;
           background-size: contain; }
-          .slider-block .container .rec ul li a, .slider-block .test-container .rec ul li a, .slider-block .footer .rec ul li a, .slider-block .bottom-text .rec ul li a {
+          .slider-block .container .rec ul li a, .slider-block .footer .rec ul li a, .slider-block .bottom-text .rec ul li a {
             color: #0193e9; }
-            .slider-block .container .rec ul li a span, .slider-block .test-container .rec ul li a span, .slider-block .footer .rec ul li a span, .slider-block .bottom-text .rec ul li a span {
+            .slider-block .container .rec ul li a span, .slider-block .footer .rec ul li a span, .slider-block .bottom-text .rec ul li a span {
               display: block;
               margin-bottom: 10px; }
-            .slider-block .container .rec ul li a:after, .slider-block .test-container .rec ul li a:after, .slider-block .footer .rec ul li a:after, .slider-block .bottom-text .rec ul li a:after {
+            .slider-block .container .rec ul li a:after, .slider-block .footer .rec ul li a:after, .slider-block .bottom-text .rec ul li a:after {
               content: "180 грн.";
               display: inline-block;
               background: url("../img/icon-sticker.png") no-repeat 0 0;
@@ -320,7 +301,7 @@ nav {
               padding-left: 20px;
               text-decoration: none;
               color: #3F3F3F; }
-          .slider-block .container .rec ul li:last-child, .slider-block .test-container .rec ul li:last-child, .slider-block .footer .rec ul li:last-child, .slider-block .bottom-text .rec ul li:last-child {
+          .slider-block .container .rec ul li:last-child, .slider-block .footer .rec ul li:last-child, .slider-block .bottom-text .rec ul li:last-child {
             height: 30%; }
 
 .social {
