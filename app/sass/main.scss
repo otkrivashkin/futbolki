@@ -274,10 +274,9 @@ nav {
 	}
 }
 
-// TODO connect slider https://www.youtube.com/watch?v=MlWkcBqWISk  https://github.com/kenwheeler/slick
 .slider-block {
 	border-top: 1px solid yellow;
-	height: 335px;
+	//height: 335px;
 	display: block;
 	background: url("../img/tracery-large.png") no-repeat 0 0;
 	background-size: contain;
@@ -287,12 +286,16 @@ nav {
 				position: relative;
 				overflow: hidden;
 				display: inline-block;
-				height: 300px;
-				width: 69%;
 				border: 2px solid yellow;
-				padding: 40px 250px 0 80px;
-				background: white url("../img/fg-medium.jpg") no-repeat right;
-				background-size: contain;
+				max-width: 650px;
+				height: 300px;
+				.slider__element {
+					padding: 40px 250px 0 80px;
+					//width: 450px;
+					height: 303px;
+					background: white url("../img/fg-medium.jpg") no-repeat right;
+					background-size: contain;
+				}
 				h1 {
 					display: block;
 					font-size: 26px;
@@ -329,32 +332,32 @@ nav {
 						font-weight: 700;
 					}
 				}
-				&:before {
-					content: "";
-					position: absolute;
-					display: inline-block;
-					background-size: contain;
-					left: 10px;
-					top: 45%;
-					width: 35px;
-					height: 35px;
-					background: yellow url("../img/icon-arrow.png") no-repeat 10px center;
-					border-radius: 50%;
-
-				}
-				&:after {
-					content: "";
-					position: absolute;
-					display: inline-block;
-					background-size: contain;
-					right: 10px;
-					top: 45%;
-					width: 35px;
-					height: 35px;
-					background: yellow url("../img/icon-arrow.png") no-repeat 10px center;
-					border-radius: 50%;
-					transform: rotate(180deg);
-				}
+				//&:before {
+				//	content: "";
+				//	position: absolute;
+				//	display: inline-block;
+				//	background-size: contain;
+				//	left: 10px;
+				//	top: 45%;
+				//	width: 35px;
+				//	height: 35px;
+				//	background: yellow url("../img/icon-arrow.png") no-repeat 10px center;
+				//	border-radius: 50%;
+                //
+				//}
+				//&:after {
+				//	content: "";
+				//	position: absolute;
+				//	display: inline-block;
+				//	background-size: contain;
+				//	right: 10px;
+				//	top: 45%;
+				//	width: 35px;
+				//	height: 35px;
+				//	background: yellow url("../img/icon-arrow.png") no-repeat 10px center;
+				//	border-radius: 50%;
+				//	transform: rotate(180deg);
+				//}
 			}
 			.rec {
 				display: inline-block;
@@ -393,6 +396,24 @@ nav {
 				}
 			}
 		}
+	.slick-next {
+		background-color: yellow;
+		width: 100px;
+		height: 100px;
+		&:hover {
+			background-color: yellow;
+		}
+	}
+	.slick-prev {
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		z-index: 1;
+		background-color: red;
+		&:hover {
+			background-color: red;
+		}
+	}
 }
 
 .social {

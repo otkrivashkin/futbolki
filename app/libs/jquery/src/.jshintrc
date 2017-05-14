@@ -20,7 +20,7 @@
 	"globals": {
 		"window": true,
 		"JSON": false,
-
+		"$": false, // Что бы доллар работал
 		"jQuery": true,
 		"define": true,
 		"module": true,

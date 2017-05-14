@@ -199,7 +199,6 @@ nav {
 
 .slider-block {
   border-top: 1px solid yellow;
-  height: 335px;
   display: block;
   background: url("../img/tracery-large.png") no-repeat 0 0;
   background-size: contain; }
@@ -209,12 +208,14 @@ nav {
       position: relative;
       overflow: hidden;
       display: inline-block;
-      height: 300px;
-      width: 69%;
       border: 2px solid yellow;
-      padding: 40px 250px 0 80px;
-      background: white url("../img/fg-medium.jpg") no-repeat right;
-      background-size: contain; }
+      max-width: 650px;
+      height: 300px; }
+      .slider-block .container .slider .slider__element, .slider-block .footer .slider .slider__element, .slider-block .bottom-text .slider .slider__element {
+        padding: 40px 250px 0 80px;
+        height: 303px;
+        background: white url("../img/fg-medium.jpg") no-repeat right;
+        background-size: contain; }
       .slider-block .container .slider h1, .slider-block .footer .slider h1, .slider-block .bottom-text .slider h1 {
         display: block;
         font-size: 26px;
@@ -247,33 +248,6 @@ nav {
           font-size: 14px;
           text-decoration: none;
           font-weight: 700; }
-      .slider-block .container .slider:before, .slider-block .footer .slider:before, .slider-block .bottom-text .slider:before {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        background-size: contain;
-        left: 10px;
-        top: 45%;
-        width: 35px;
-        height: 35px;
-        background: yellow url("../img/icon-arrow.png") no-repeat 10px center;
-        -webkit-border-radius: 50%;
-                border-radius: 50%; }
-      .slider-block .container .slider:after, .slider-block .footer .slider:after, .slider-block .bottom-text .slider:after {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        background-size: contain;
-        right: 10px;
-        top: 45%;
-        width: 35px;
-        height: 35px;
-        background: yellow url("../img/icon-arrow.png") no-repeat 10px center;
-        -webkit-border-radius: 50%;
-                border-radius: 50%;
-        -webkit-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-                transform: rotate(180deg); }
     .slider-block .container .rec, .slider-block .footer .rec, .slider-block .bottom-text .rec {
       display: inline-block;
       width: 30%;
@@ -304,6 +278,20 @@ nav {
               color: #3F3F3F; }
           .slider-block .container .rec ul li:last-child, .slider-block .footer .rec ul li:last-child, .slider-block .bottom-text .rec ul li:last-child {
             height: 30%; }
+  .slider-block .slick-next {
+    background-color: yellow;
+    width: 100px;
+    height: 100px; }
+    .slider-block .slick-next:hover {
+      background-color: yellow; }
+  .slider-block .slick-prev {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+    background-color: red; }
+    .slider-block .slick-prev:hover {
+      background-color: red; }
 
 .social {
   display: block; }
